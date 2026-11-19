@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('fonts/SpaceGrotesk-Light.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('fonts/SpaceGrotesk-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('fonts/SpaceGrotesk-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('fonts/SpaceGrotesk-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+}
+
+body {
+    background-color: rgb(74, 121, 117);
+    font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.webpage-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.head-title {
+    color: #fff;
+    margin: 0;
+    padding-left: 35px;
+    transition: 0.3s;
+}
+
+.head-title:hover {
+    transform: translate(10px, 0px);
+}
+
+.head-credit {
+    color: #333;
+    margin: 0;
+}
+
+.webpage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+    flex-wrap: wrap;
+}
+
+.page-main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.page-sub {
+    background-color: aliceblue;
+    padding: 25px;
+    border-radius: 8px;
+
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 300px;
+    height: 600px;
+    color: #333;
+    background-color: aliceblue;
+
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transform: translate(-5px, -5px);
+}
+
+.card-sub {
+    display: flex;
+}
+
+.img {
+    width: 100%;
+    height: 425px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.subImg {
+    object-fit: cover;
+    object-position: center;
+}
+
+.subText {
+    width: 75%;
+    margin-left: 25px;
+}
+
+.subDesc {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.webpage-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+.foot-label {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
